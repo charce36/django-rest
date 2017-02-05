@@ -19,7 +19,7 @@ echo.
 
 SET /p var= ^> Seleccione una opcion [1-6]: 
 
-if "%var%"=="0" goto inicio
+if "%var%"=="0" goto config
 if "%var%"=="1" goto op1
 if "%var%"=="2" goto op2
 if "%var%"=="3" goto op3
@@ -32,13 +32,14 @@ echo. El numero "%var%" no es una opcion valida, por favor intente de nuevo.
 echo.
 pause
 echo.
-goto:inicio
+goto:config
 
 :op1
     echo.
-    echo. Has elegido la opcion No. 1
+    echo. Setting enviroment..
     echo.
-        ::Aquí van las líneas de comando de tu opción
+        virtualenv env
+        .\env\Scripts\activate
         color 08
     echo.
     pause

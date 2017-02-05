@@ -1,2 +1,3 @@
 # django-rest
-Django Rest Framework tutorial
+Django REST Framework tutorial
+https://github.com/tomchristie/django-rest-framework/tree/master
